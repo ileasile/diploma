@@ -1,0 +1,93 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage[colorlinks, linkcolor=blue]{hyperref}
+\usepackage{indentfirst}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{sectsty}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage{datetime}
+\usepackage{amsthm}
+% \usepackage[headheight=15pt]{geometry}
+\usepackage{pstricks}
+\usepackage{color}
+\usepackage[linesnumbered, noline, noend]{algorithm2e}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{epstopdf}
+
+\title{Бесконтурные случайные графы с нестандартной достижимостью}
+\author{Илья Мурадьян}
+\date{\today}
+
+%\geometry{left=2cm}% левое поле
+%\geometry{right=1.5cm}% правое поле
+%\geometry{top=1cm}% верхнее поле
+%\geometry{bottom=2cm}% нижнее поле
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\DeclareMathOperator*{\argmaxA}{argmax}
+%\let\oldref\ref
+%\renewcommand{\ref}[1]{(\oldref{#1})}
+\makeatother
+
+\theoremstyle{definition}
+\newtheorem{defn}{Определение}
+\newtheorem{theorem}{Теорема}
+%\newtheorem{proof}{Доказательство}
+\newtheorem{lemma}{Лемма}
+
+\textwidth=165mm
+\textheight=245mm
+\oddsidemargin=5mm
+\topmargin=-10mm
+\parindent=0.4cm
+
+
+\def\labelitemi{$\triangleright$}
+\setcounter{secnumdepth}{0}
+
+\usepackage{titlesec}
+\titleformat*{\section}{\fontsize{20}{20}\selectfont\centering\bfseries}
+\titleformat*{\subsection}{\fontsize{16}{16}\selectfont\centering\bfseries}
+
+\begin{document}
+	%\maketitle
+	%\pagestyle{fancy}
+	%\fancyhead{}
+	%\fancyhead[L]{\thetitle}
+	%\fancyhead[R]{\thedate}
+	\Large
+	\input{first_page}
+	
+	\tableofcontents
+	
+	\newpage
+	\input{intro}
+	
+	\newpage
+	\input{common_defs}
+	%\input{erdesh}
+	\newpage
+	\input{statement}
+	%\input{part_example}
+	%\input{sol_conn}
+	%\input{topo_sort}
+	\newpage
+	%\input{sol_acyclic_case}
+	%\input{sol_shortest}
+	%\input{attachments}
+	\newpage
+	\input{example}
+	
+	\newpage
+	\input{lit_list}
+\end{document}

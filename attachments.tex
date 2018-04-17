@@ -1,0 +1,100 @@
+\section*{Приложения}
+\begin{algorithm}
+	\KwIn{граф G(V, U)}
+	\KwOut{нумерация num}
+	\Begin(TopologicalSort){
+		\par Пусть V = \{0, 1, ..., |V| - 1\}, C = \{0, 1, ..., |C| - 1\}
+		\par cnt $\leftarrow$ |V|
+		\par used $\leftarrow$ false
+		\par st - пустой стек
+		
+		\par used[0] $\leftarrow$ true
+		\par st.push(\{0, 0, 0\})
+		
+		\While(MAIN-LOOP){st не пуст}
+		{
+			v, c, i $\leftarrow$ st.top()
+			\par
+			\While{c < |C|}{
+				\While{i < |G[v][c]|}
+				{
+					u $\leftarrow$ G[v][c][i]
+					\par
+					\If{used[u] = false}
+					{
+						used[u] $\leftarrow$ false
+						\par st.push(\{u, 0, 0\})
+						\par Выйти в MAIN-LOOP
+					}
+					u $\leftarrow$ u + 1
+				}
+				c $\leftarrow$ c + 1
+			}
+			\par cnt $\leftarrow$ cnt $-$ 1
+			\par num[cnt] $\leftarrow$ v
+			\par st.pop()
+		}
+		\Return{num}
+	}
+\end{algorithm}
+
+\begin{algorithm}
+	\KwIn{граф G(X, U, f); s, t $\in$ X}
+	\KwOut{массив вероятностей prob, массив путей path}
+	\Begin(GetProbabilities){
+		num $\gets$ TopologicalSort(G)
+				
+		i $\gets$ |X| $-$ 1
+		
+		\While{num[i] $\ne$ t}
+		{	
+			\For{c $\in$ C}
+			{
+				prob[num[i]][c] $\gets$ 0
+			}
+			i $\gets$ i $-$ 1
+		}
+		\For{c $\in$ C}
+		{
+			prob[t][c] $\gets$ 1
+		}
+		
+		i $\gets$ i $-$ 1
+		
+		\While{num[i+1] $\ne$ s}
+		{
+			x $\gets$ num[i]
+			
+			\For{c $\in$ C}
+			{
+				prob[x][c] $\gets$ 0
+				
+				\For{$u = (x, y) \in Inc_c(x) $}
+				{
+					pr $\gets$ 0
+					
+					\For{cy $\in$ C}
+					{
+						\If{c = cy}
+						{
+							$pr \gets pr + (1-p) \cdot prob[y][cy]$
+						}
+						\Else{
+							$pr \gets pr + \frac{p}{|C| - 1} \cdot prob[y][cy]$
+						}
+					}
+					\If{pr > prob[x][c]}
+					{
+						prob[x][c] $\gets$ pr
+						
+						path[x][c] $\gets$ y
+					}
+				}
+			}
+			
+			i $\gets$ i $-$ 1
+		}
+		\Return{prob, path}
+	}
+\end{algorithm}
+

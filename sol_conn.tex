@@ -1,0 +1,20 @@
+\section*{Определение вероятности достижимости}
+\begin{algorithm}
+	\KwIn{$G(V,U); a, b \in V; p, q, bs \in \mathbb{B}$}
+	\Begin{
+		$\forall v \in V\setminus \{b\}, \forall c \in [1,n]_\mathbb{N}: prob[v][c] := 0$\\
+		$\forall  c \in [1,n]_\mathbb{N}: prob[b][c] := 1$\\
+		\While{$prob[a][bs]$ недостаточно точна}
+		{
+			\ForEach{$u = (v_0,v_1) \in U (u \in U_{col})$}
+			{
+				\ForEach{ $bc \in \mathbb{B} $}{
+					\If{$col = 0$ OR $bc_{col} = 1$}{
+						$prob[v_0][bc] = max (prob[v_0][bc], (1-p)\cdot prob[v_1][bc] + \sum\limits_{b \ne bc} \frac{prob[v_1][b]\cdot q(b)}{1-q(bc)})$
+					}
+				}
+			}	
+		}
+		
+	}
+\end{algorithm}
