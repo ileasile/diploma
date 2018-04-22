@@ -16,7 +16,7 @@
 % \usepackage[headheight=15pt]{geometry}
 \usepackage{pstricks}
 \usepackage{color}
-\usepackage[linesnumbered, noline, noend]{algorithm2e}
+\usepackage[linesnumbered, noline, noend, spanish, onelanguage]{algorithm2e}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{verbatim}
@@ -59,6 +59,22 @@
 \titleformat*{\section}{\fontsize{20}{20}\selectfont\centering\bfseries}
 \titleformat*{\subsection}{\fontsize{16}{16}\selectfont\centering\bfseries}
 
+\SetKwInput{KwData}{Исходные параметры}
+\SetKwInput{KwResult}{Результат}
+\SetKwInput{KwIn}{Вход}
+\SetKwInput{KwOut}{Выход}
+\SetKwIF{If}{ElseIf}{Else}{если}{тогда}{иначе если}{иначе}{конец условия}
+\SetKwFor{While}{до тех пор, пока}{выполнять}{конец цикла}
+\SetKw{KwTo}{от}
+\SetKw{KwRet}{вернуть}
+\SetKw{Return}{вернуть}
+\SetKwBlock{Begin}{начало}{конец}
+\SetKwSwitch{Switch}{Case}{Other}{Проверить значение}{и выполнить}{вариант}{в противном случае}{конец варианта}{конец проверки значений}
+\SetKwFor{For}{для}{:}{конец цикла}
+\SetKwFor{ForEach}{для каждого}{выполнять}{конец цикла}
+\SetKwRepeat{Repeat}{повторять}{до тех пор, пока}
+\SetAlgorithmName{Алгоритм}{алгоритм}{Список алгоритмов}
+
 \begin{document}
 	%\maketitle
 	%\pagestyle{fancy}
@@ -71,7 +87,7 @@
 	\tableofcontents
 	
 	\newpage
-	\input{intro}
+	%\input{intro}
 	
 	\newpage
 	\input{common_defs}
@@ -86,7 +102,7 @@
 	%\input{sol_shortest}
 	%\input{attachments}
 	\newpage
-	\input{example}
+	%\input{example}
 	
 	\newpage
 	\input{lit_list}
