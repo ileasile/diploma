@@ -1,0 +1,6 @@
+code/.idea/*
+*.pyc
+*.zip
+archive/*
+ResultsAdditional.data
+data/subgraph_*

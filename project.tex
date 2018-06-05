@@ -9,6 +9,10 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{sectsty}
+
+\sectionfont{\fontsize{14}{14}\selectfont}
+\subsectionfont{\fontsize{14}{14}\selectfont}
+
 \usepackage{fancyhdr}
 \usepackage{titling}
 \usepackage{datetime}
@@ -16,12 +20,19 @@
 % \usepackage[headheight=15pt]{geometry}
 \usepackage{pstricks}
 \usepackage{color}
-\usepackage[linesnumbered, noline, noend, spanish, onelanguage]{algorithm2e}
+\usepackage{etoolbox}
+\usepackage[linesnumbered, noline, noend, spanish, onelanguage, algosection, boxed]{algorithm2e}
 \usepackage{caption}
-\usepackage{subcaption}
+%\usepackage{subcaption}
+
 \usepackage{verbatim}
 \usepackage{amsfonts}
 \usepackage{epstopdf}
+\usepackage[nottoc,numbib]{tocbibind}
+%\usepackage[backend=bibtex,sorting=none]{biblatex}
+
+%\addbibresourse{biblio}     %% имя библиографической базы (bib-файла) 
+%\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}‌​
 
 \title{Бесконтурные случайные графы с нестандартной достижимостью}
 \author{Илья Мурадьян}
@@ -39,7 +50,7 @@
 %\renewcommand{\ref}[1]{(\oldref{#1})}
 \makeatother
 
-\theoremstyle{definition}
+%\theoremstyle{definition}
 \newtheorem{defn}{Определение}
 \newtheorem{theorem}{Теорема}
 %\newtheorem{proof}{Доказательство}
@@ -51,13 +62,18 @@
 \topmargin=-10mm
 \parindent=0.4cm
 
+\makeatletter
+\renewcommand\@biblabel[1]{#1.}
+\makeatother
+
+\captionsetup[algorithm2e]{font=Large}
 
 \def\labelitemi{$\triangleright$}
-\setcounter{secnumdepth}{0}
+%\setcounter{secnumdepth}{0}
 
 \usepackage{titlesec}
-\titleformat*{\section}{\fontsize{20}{20}\selectfont\centering\bfseries}
-\titleformat*{\subsection}{\fontsize{16}{16}\selectfont\centering\bfseries}
+%\titleformat{\section}{\fontsize{14}{14}\selectfont\centering\bfseries}
+%\titleformat{\subsection}{\fontsize{14}{14}\selectfont\centering\bfseries}
 
 \SetKwInput{KwData}{Исходные параметры}
 \SetKwInput{KwResult}{Результат}
@@ -72,8 +88,12 @@
 \SetKwSwitch{Switch}{Case}{Other}{Проверить значение}{и выполнить}{вариант}{в противном случае}{конец варианта}{конец проверки значений}
 \SetKwFor{For}{для}{:}{конец цикла}
 \SetKwFor{ForEach}{для каждого}{выполнять}{конец цикла}
+\SetKwFor{ForAll}{для всех}{выполнять}{конец цикла}
 \SetKwRepeat{Repeat}{повторять}{до тех пор, пока}
 \SetAlgorithmName{Алгоритм}{алгоритм}{Список алгоритмов}
+
+%\usepackage{float}
+%\newfloat{algorithm}{t}{lop}
 
 \begin{document}
 	%\maketitle
@@ -87,21 +107,22 @@
 	\tableofcontents
 	
 	\newpage
-	%\input{intro}
+	\input{intro}
 	
-	\newpage
+	%\newpage
 	\input{common_defs}
 	%\input{erdesh}
-	\newpage
+	%\newpage
 	\input{statement}
 	%\input{part_example}
 	%\input{sol_conn}
 	%\input{topo_sort}
-	\newpage
+	%\newpage
+	\input{statement_mod}
 	%\input{sol_acyclic_case}
 	%\input{sol_shortest}
 	%\input{attachments}
-	\newpage
+	%\newpage
 	%\input{example}
 	
 	\newpage
