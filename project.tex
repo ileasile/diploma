@@ -1,4 +1,7 @@
 \documentclass[a4paper,14pt]{article}
+
+\usepackage[linesnumbered, noline, noend, spanish, onelanguage, boxed]{algorithm2e}
+
 \usepackage[colorlinks, linkcolor=blue]{hyperref}
 \usepackage{indentfirst}
 \usepackage[T1,T2A]{fontenc}
@@ -21,7 +24,7 @@
 \usepackage{pstricks}
 \usepackage{color}
 \usepackage{etoolbox}
-\usepackage[linesnumbered, noline, noend, spanish, onelanguage, algosection, boxed]{algorithm2e}
+
 \usepackage{caption}
 %\usepackage{subcaption}
 
@@ -33,10 +36,6 @@
 
 %\addbibresourse{biblio}     %% имя библиографической базы (bib-файла) 
 %\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}‌​
-
-\title{Бесконтурные случайные графы с нестандартной достижимостью}
-\author{Илья Мурадьян}
-\date{\today}
 
 %\geometry{left=2cm}% левое поле
 %\geometry{right=1.5cm}% правое поле
@@ -102,6 +101,8 @@
 	%\fancyhead[L]{\thetitle}
 	%\fancyhead[R]{\thedate}
 	\Large
+	\IncMargin{0.8em}
+	
 	\input{first_page}
 	
 	\tableofcontents
