@@ -1,6 +1,5 @@
 \documentclass[a4paper,14pt]{article}
 
-\usepackage[linesnumbered, noline, noend, spanish, onelanguage, boxed]{algorithm2e}
 
 \usepackage[colorlinks, linkcolor=blue]{hyperref}
 \usepackage{indentfirst}
@@ -65,7 +64,9 @@
 \renewcommand\@biblabel[1]{#1.}
 \makeatother
 
-\captionsetup[algorithm2e]{font=Large}
+\usepackage[linesnumbered, noline, noend, spanish, onelanguage, boxed, ruled]{algorithm2e}
+\renewcommand\AlCapFnt{\Large}
+\renewcommand\AlCapNameFnt{\Large}
 
 \def\labelitemi{$\triangleright$}
 %\setcounter{secnumdepth}{0}
