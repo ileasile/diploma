@@ -122,3 +122,28 @@ class Config:
 
         self.output_info_ratios_before = "../data/ratios_before.txt"
         self.output_info_ratios_after = "../data/ratios_after.txt"
+
+    def defence(self):
+        self.background_file_path = "../data/defence/g1.graph"
+        self.background_skip_header = False
+        self.background_weighted = False
+        self.background_keep_directed = True
+        self.background_labeling_file = "../data/defence/g1.labels"
+
+        self.template_file_path = "../data/defence/t1.graph"
+        self.template_skip_header = False
+        self.template_weighted = False
+        self.template_keep_directed = True
+        self.template_labeling_file = "../data/defence/t1.labels"
+
+        self.edges_matching_function = None
+
+        self.lcc_max_iterations = 1
+        self.max_component_elements = 2
+
+        self.output_t = "../data/T.txt"
+        self.output_vertices_lists = "../data/vertices_subsets.txt"
+        self.output_subgraphs = "../data/subgraph_"
+
+        self.output_info_ratios_before = "../data/ratios_before.txt"
+        self.output_info_ratios_after = "../data/ratios_after.txt"
