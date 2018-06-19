@@ -70,8 +70,21 @@
 
 \def\labelitemi{$\triangleright$}
 %\setcounter{secnumdepth}{0}
+\setcounter{page}{1}
 
 \usepackage{titlesec}
+
+\usepackage{setspace}       % Межстрочный интервал
+\onehalfspacing
+
+\RequirePackage{caption}
+\DeclareCaptionLabelSeparator{defffis}{ -- }
+\captionsetup{justification=centering,labelsep=defffis}
+
+\newlength\MyIndent
+\setlength\MyIndent{1.25cm}
+\setlength{\parindent}{\MyIndent} % Абзацный отступ
+
 %\titleformat{\section}{\fontsize{14}{14}\selectfont\centering\bfseries}
 %\titleformat{\subsection}{\fontsize{14}{14}\selectfont\centering\bfseries}
 
@@ -102,6 +115,8 @@
 	%\fancyhead[L]{\thetitle}
 	%\fancyhead[R]{\thedate}
 	\Large
+	\baselineskip=8mm
+	\def\figurename{Рисунок}
 	\IncMargin{0.8em}
 	
 	\input{first_page}
@@ -127,6 +142,6 @@
 	%\newpage
 	%\input{example}
 	
-	\newpage
+	%\newpage
 	\input{lit_list}
 \end{document}

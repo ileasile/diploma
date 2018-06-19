@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.4.19)  10 JUN 2018 22:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.4.19)  16 JUN 2018 20:48
 entering extended mode
 **./defence.tex
 (defence.tex
@@ -1711,18 +1711,18 @@ LaTeX Font Warning: Font shape `T2A/cmss/m/n' in size <4> not available
 {C:/Users/Ilya/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 59.
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 59.
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 59.
+line 64.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\sansmathaccent\ot1mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1736,14 +1736,14 @@ Package epstopdf Info: Source file: <ee.eps>
 (epstopdf)                    size: 16277 bytes
 (epstopdf)             Command: <epstopdf --outfile=ee-eps-converted-to.pdf ee.
 eps>
-(epstopdf)             \includegraphics on input line 59.
+(epstopdf)             \includegraphics on input line 64.
 Package epstopdf Info: Output file is already uptodate.
 
-<ee-eps-converted-to.pdf, id=80, 597.23125pt x 236.885pt>
+<ee-eps-converted-to.pdf, id=84, 597.23125pt x 236.885pt>
 File: ee-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ee-eps-converted-to.pdf>
-Package pdftex.def Info: ee-eps-converted-to.pdf used on input line 59.
+Package pdftex.def Info: ee-eps-converted-to.pdf used on input line 64.
 (pdftex.def)             Requested size: 342.2953pt x 135.76683pt.
  [3
 
@@ -1756,21 +1756,18 @@ Package epstopdf Info: Source file: <ierar.eps>
 (epstopdf)                    size: 4936 bytes
 (epstopdf)             Command: <epstopdf --outfile=ierar-eps-converted-to.pdf 
 ierar.eps>
-(epstopdf)             \includegraphics on input line 72.
+(epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
 
-<ierar-eps-converted-to.pdf, id=123, 357.335pt x 324.21124pt>
+<ierar-eps-converted-to.pdf, id=126, 357.335pt x 324.21124pt>
 File: ierar-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ierar-eps-converted-to.pdf>
-Package pdftex.def Info: ierar-eps-converted-to.pdf used on input line 72.
+Package pdftex.def Info: ierar-eps-converted-to.pdf used on input line 77.
 (pdftex.def)             Requested size: 171.14764pt x 155.28322pt.
  [4
 
  <./ierar-eps-converted-to.pdf>] [5
-
-]
-[6
 
 ]
 Package epstopdf Info: Source file: <ee9.eps>
@@ -1783,15 +1780,16 @@ Package epstopdf Info: Source file: <ee9.eps>
 9.eps>
 (epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
- <ee9-eps-converted-to.pdf, id=210, 606.265pt x 242.9075pt>
+
+<ee9-eps-converted-to.pdf, id=187, 606.265pt x 242.9075pt>
 File: ee9-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ee9-eps-converted-to.pdf>
 Package pdftex.def Info: ee9-eps-converted-to.pdf used on input line 109.
 (pdftex.def)             Requested size: 342.2953pt x 137.1466pt.
- [7
+ [6
 
- <./ee9-eps-converted-to.pdf>] [8
+ <./ee9-eps-converted-to.pdf>] [7
 
 ]
 Package epstopdf Info: Source file: <ee1.eps>
@@ -1805,15 +1803,15 @@ Package epstopdf Info: Source file: <ee1.eps>
 (epstopdf)             \includegraphics on input line 150.
 Package epstopdf Info: Output file is already uptodate.
 
-<ee1-eps-converted-to.pdf, id=276, 606.265pt x 242.9075pt>
+<ee1-eps-converted-to.pdf, id=253, 606.265pt x 242.9075pt>
 File: ee1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ee1-eps-converted-to.pdf>
 Package pdftex.def Info: ee1-eps-converted-to.pdf used on input line 150.
 (pdftex.def)             Requested size: 342.2953pt x 137.1466pt.
- [9
+ [8
 
- <./ee1-eps-converted-to.pdf>] [10
+ <./ee1-eps-converted-to.pdf>] [9
 
 ]
 Package epstopdf Info: Source file: <ee4.eps>
@@ -1827,13 +1825,13 @@ Package epstopdf Info: Source file: <ee4.eps>
 (epstopdf)             \includegraphics on input line 178.
 Package epstopdf Info: Output file is already uptodate.
 
-<ee4-eps-converted-to.pdf, id=348, 606.265pt x 242.9075pt>
+<ee4-eps-converted-to.pdf, id=325, 606.265pt x 242.9075pt>
 File: ee4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ee4-eps-converted-to.pdf>
 Package pdftex.def Info: ee4-eps-converted-to.pdf used on input line 178.
 (pdftex.def)             Requested size: 342.2953pt x 137.1466pt.
- [11
+ [10
 
  <./ee4-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <ee5.eps>
@@ -1847,13 +1845,13 @@ Package epstopdf Info: Source file: <ee5.eps>
 (epstopdf)             \includegraphics on input line 187.
 Package epstopdf Info: Output file is already uptodate.
 
-<ee5-eps-converted-to.pdf, id=393, 606.265pt x 242.9075pt>
+<ee5-eps-converted-to.pdf, id=370, 606.265pt x 242.9075pt>
 File: ee5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ee5-eps-converted-to.pdf>
 Package pdftex.def Info: ee5-eps-converted-to.pdf used on input line 187.
 (pdftex.def)             Requested size: 342.2953pt x 137.1466pt.
- [12
+ [11
 
  <./ee5-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <ee7.eps>
@@ -1867,13 +1865,13 @@ Package epstopdf Info: Source file: <ee7.eps>
 (epstopdf)             \includegraphics on input line 196.
 Package epstopdf Info: Output file is already uptodate.
 
-<ee7-eps-converted-to.pdf, id=435, 614.295pt x 242.9075pt>
+<ee7-eps-converted-to.pdf, id=412, 614.295pt x 242.9075pt>
 File: ee7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ee7-eps-converted-to.pdf>
 Package pdftex.def Info: ee7-eps-converted-to.pdf used on input line 196.
 (pdftex.def)             Requested size: 342.2953pt x 135.35268pt.
- [13
+ [12
 
  <./ee7-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <problem.eps>
@@ -1887,23 +1885,23 @@ f problem.eps>
 (epstopdf)             \includegraphics on input line 209.
 Package epstopdf Info: Output file is already uptodate.
 
-<problem-eps-converted-to.pdf, id=480, 477.785pt x 140.525pt>
+<problem-eps-converted-to.pdf, id=456, 477.785pt x 140.525pt>
 File: problem-eps-converted-to.pdf Graphic file (type pdf)
 
 <use problem-eps-converted-to.pdf>
 Package pdftex.def Info: problem-eps-converted-to.pdf used on input line 209.
 (pdftex.def)             Requested size: 342.2953pt x 100.67401pt.
- [14
+ [13
 
  <./problem-eps-converted-to.pdf>]
-[15
+[14
 
 ]
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 234
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 235
 .
  ("C:\Program Files\MiKTeX 2.9\tex\latex\cyrillic\t2acmtt.fd"
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [16
+) [15
 
 ]
 \tf@nav=\write6
@@ -1915,12 +1913,12 @@ File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 \tf@snm=\write8
 \openout8 = `defence.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 237.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 237.
 
 (defence.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 237.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 237.
 Package rerunfilecheck Info: File `defence.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1934,13 +1932,13 @@ LaTeX Font Warning: Size substitutions with differences
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 19498 strings out of 493324
- 358549 string characters out of 3138984
+ 19504 strings out of 493324
+ 358819 string characters out of 3138984
  459576 words of memory out of 3000000
- 22509 multiletter control sequences out of 15000+200000
+ 22517 multiletter control sequences out of 15000+200000
  20518 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,26n,55p,775b,3120s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,26n,57p,775b,3108s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
 t2a.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Prog
@@ -1956,9 +1954,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1095.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1440.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/cm-super/sfsx1095.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/cm-super/sftt1095.pfb>
-Output written on defence.pdf (16 pages, 465272 bytes).
+Output written on defence.pdf (15 pages, 458721 bytes).
 PDF statistics:
- 632 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 608 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
